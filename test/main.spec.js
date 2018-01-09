@@ -47,10 +47,10 @@ describe('Mortgage Calculator', function () {
         .then(input => expect(input).to.exist)
     );
 
-    it('should have an input element with the name of "term"', () =>
+    xit('should have a select element with the name of "term"', () =>
       pageObject
         .evaluate(() => document.querySelector('select[name=term]'))
-        .then(input => expect(input).to.exist)
+        .then(select => expect(select).to.exist)
     );
 
     it('should contain a button with the name of "submit"', () =>
